@@ -28,3 +28,17 @@ progress.onchange = function () {
   ctrl.classList.add("fa-pause");
   ctrl.classList.remove("fa-play");
 };
+function next() {
+  document.getElementById("source").src = "Our Dream Together.mp3";
+  document.getElementById("song").load();
+  ctrl.classList.remove("fa-pause");
+  ctrl.classList.add("fa-play");
+  document.getElementById("title").innerHTML = "Our Dream Together";
+}
+function back() {
+  document.getElementById("source").src = "Sweet Serenade.mp3";
+  document.getElementById("song").load();
+  ctrl.classList.remove("fa-pause");
+  ctrl.classList.add("fa-play");
+  document.getElementById("title").innerHTML = "Sweet Serenade";
+}
