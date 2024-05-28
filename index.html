@@ -22,21 +22,21 @@
           </div>
         </nav>
         <img src="cover.png" class="cover" />
-        <h1>Sweet Serenade(Siwar)</h1>
+        <h1 id="title">Sweet Serenade(Siwar)</h1>
         <p>Your Bae Did This!!!</p>
         <audio id="song">
-          <source src="Sweet Serenade.mp3" type="audio/mpeg" />
+          <source id="source" src="Sweet Serenade.mp3" type="audio/mpeg" />
         </audio>
         <input type="range" value="0" id="progress" />
         <div class="controls">
           <div>
-            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-backward" onclick="back()"></i>
           </div>
           <div onclick="playPause()">
             <i class="fa-solid fa-play" id="ctrl"></i>
           </div>
           <div>
-            <i class="fa-solid fa-forward"></i>
+            <i class="fa-solid fa-forward" onclick="next()"></i>
           </div>
         </div>
       </div>
